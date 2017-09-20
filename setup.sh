@@ -26,13 +26,20 @@ echo 'set completion-ignore-case On' >> ~/.inputrc
 git clone git://github.com/stephenway/monokai.terminal.git
 #need to make dem color show
 touch ~/.bash_profile
+# echo 'PATH=/usr/local/bin:$PATH' >> ~/.bash_profile
+# echo '# colors' >> ~/.bash_profile
+# echo 'CLICOLOR=1' >> ~/.bash_profile
+# echo 'LSCOLORS=gxBxhxDxfxhxhxhxhxcxcx' >> ~/.bash_profile
+# echo 'PS1="\u@\w $ "' >> ~/.bash_profile
+# echo 'alias ls="ls -G"' >> ~/.bash_profile
+# echo 'PS1="\[\e[0;38;5;166m\]\u@\H\[\e[0m\] \w $ "' >> ~/.bash_profile
+
 echo 'PATH=/usr/local/bin:$PATH' >> ~/.bash_profile
 echo '# colors' >> ~/.bash_profile
+echo 'export PS1="\[\033[36m\]\u\[\033[m\]@\[\033[32m\]\h:\[\033[33;1m\]\w\[\033[m\]\$ "1' >> ~/.bash_profile
 echo 'CLICOLOR=1' >> ~/.bash_profile
-echo 'LSCOLORS=gxBxhxDxfxhxhxhxhxcxcx' >> ~/.bash_profile
-echo 'PS1="\u@\w $ "' >> ~/.bash_profile
+echo 'LSCOLORS=ExFxBxDxCxegedabagacad' >> ~/.bash_profile
 echo 'alias ls="ls -G"' >> ~/.bash_profile
-echo 'PS1="\[\e[0;38;5;166m\]\u@\H\[\e[0m\] \w $ "' >> ~/.bash_profile
 
 echo '# flask' >> ~/.bash_profile
 echo 'export FLASK_APP=app.py' >> ~/.bash_profile
